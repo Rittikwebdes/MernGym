@@ -13,7 +13,7 @@ export default function AuthProvider({ children }) {
       setIsAuth(true);
     }
   });
-  const url = "http://localhost:3000";
+  const url = "https://merngym-1.onrender.com";
   const userMessage = async (name, email, message) => {
     const data = await axios.post(
       `${url}/contact/message`,
